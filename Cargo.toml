@@ -1,0 +1,10 @@
+[package]
+name = "test-app"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+tss-esapi = { git = "https://github.com/Superhepper/rust-tss-esapi.git", branch = "tbs-tcti", features = [
+    "generate-bindings",
+    "serde",
+], version = "8.0.0-alpha" }
